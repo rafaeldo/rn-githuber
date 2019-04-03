@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   container: {
     height: 54 + getStatusBarHeight(),
     paddingTop: getStatusBarHeight(),
+    backgroundColor: colors.white,
     borderBottomWidth: 1,
     borderBottomColor: colors.light,
     flexDirection: 'row',
