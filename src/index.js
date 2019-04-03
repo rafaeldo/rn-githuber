@@ -1,23 +1,7 @@
-import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from 'react';
 
-import Todo from '~/components/Todo';
+import Routes from './routes';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Todo title="Fazer caféeee" />
-      </View>
-    );
-  }
-}
+const App = () => <Routes />;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-});
+export default App;
