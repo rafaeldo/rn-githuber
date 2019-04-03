@@ -1,9 +1,9 @@
 # React-Native GITHUBER
 
 ![Demo](<https://i.imgur.com/PjYwSK5.png](https://i.imgur.com/PjYwSK5.png)>)
-![Demo](<https://i.imgur.com/5MKGTYg.png](https://i.imgur.com/5MKGTYg.png)>))
+![Demo](<https://i.imgur.com/5MKGTYg.png](https://i.imgur.com/5MKGTYg.png)>)
+![Demo](<https://i.imgur.com/rw7btNe.png](https://i.imgur.com/rw7btNe.png)>)
 
-![Demo](<https://i.imgur.com/rw7btNe.png](https://i.imgur.com/rw7btNe.png)>)))
 React-Native App that works with Github API.
 
 ## Getting Started
