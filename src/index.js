@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { AsyncStorage } from 'react-native';
+import createNavigator from './routes';
 
-import Routes from './routes';
+export default class App extends Component {
+  state = {
+    userChecked: false,
+    userLogged: false,
+  };
 
-const App = () => <Routes />;
+  async componentDidMount() {
+    const username = await AsyncStorage.getItem('@Githuber:username');
 
-export default App;
+    this.setState({ userChecked: true, userLogged: !!username });
+  }
+
+  render() {
+    const { userChecked, userLogged } = this.state;
+
+    if (!userChecked) return null;
+
+    const Routes = createNavigator(userLogged);
+
+    return <Routes />;
+  }
+}
