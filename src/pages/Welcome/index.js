@@ -53,7 +53,7 @@ export default class Welcome extends Component {
       await this.saveUser(username);
 
       // Navigates the User to the next route
-      navigation.navigate('Repositories');
+      navigation.navigate('User');
     } catch (err) {
       this.setState({ loading: false, error: true });
     }
